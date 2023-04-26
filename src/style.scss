@@ -4,14 +4,82 @@ body, html {
     height: 100%;
   }
 
-  .logo {
-    background-image: url('img/ernie.jpg');
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+  // .logo {
+  //   background-image: url('img/ernie.jpg');
+  //   width: 100px;
+  //   height: 100px;
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  // }
 
   :root {
     text-size-adjust: 100%;
   }
+
+  // .notelist {
+  //   display: flex;
+  //   flex-direction: row;
+  // }
+
+  .note {
+    align-items: center;
+    height: 300px;
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    background-color: aqua;
+  }
+
+  .title {
+    font-size: larger;
+    margin: 20px;
+    text-align: center;
+    color: blueviolet;
+  }
+
+  .note .text {
+    margin: 20px;
+    text-align: left;
+  }
+
+  // $fontcolor:  rgb(10%, 10%, 10%);
+  // $backgroundcolor: rgb(98%, 98%, 98%);
+  
+  
+  // body {
+  //   font-family: "Roboto", sans-serif;
+  //   color: $fontcolor;
+  //   background-color: $backgroundcolor;
+  //   margin: 50px;
+  // }
+  
+  
+  // #note {
+  //   margin: 20px;
+
+  
+  //   input {
+  //     font-size: 1.5em;
+  //     border-radius: .25em;
+  //   }
+  // }
+  
+  // #video-detail {
+  //   width: 100%;
+  // }
+  
+  // #video-section {
+  //   display: flex;
+  
+  //   li {
+  //     list-style: none;
+  //     cursor: pointer;
+  //     display: flex;
+  //     width: 25vw;
+  //     padding: 10px;
+  //   }
+  //   li:hover {
+  //     background: darken( $backgroundcolor, 10% );
+  //   }
+  
+  // }
