@@ -1,16 +1,8 @@
 body, html {
     font-family: "Roboto", sans-serif;
-    background: linear-gradient(to bottom, #fdc8f2 0%,#ffabdc 40%,#ff72c9 100%);
+    background: #e0c9cf;
     height: 100%;
   }
-
-  // .logo {
-  //   background-image: url('img/ernie.jpg');
-  //   width: 100px;
-  //   height: 100px;
-  //   background-repeat: no-repeat;
-  //   background-size: contain;
-  // }
 
   :root {
     text-size-adjust: 100%;
@@ -27,59 +19,34 @@ body, html {
     width: 250px;
     margin: 20px;
     padding: 10px;
-    background-color: aqua;
+    border: 5px solid rgb(41, 40, 40);
+    background-color:gainsboro;
+    position: absolute;
   }
 
-  .title {
+  .note .title {
     font-size: larger;
     margin: 20px;
     text-align: center;
-    color: blueviolet;
+    color: rgb(34, 34, 34);
   }
 
   .note .text {
     margin: 20px;
     text-align: left;
+    color: rgb(37, 37, 37);
   }
 
-  // $fontcolor:  rgb(10%, 10%, 10%);
-  // $backgroundcolor: rgb(98%, 98%, 98%);
-  
-  
-  // body {
-  //   font-family: "Roboto", sans-serif;
-  //   color: $fontcolor;
-  //   background-color: $backgroundcolor;
-  //   margin: 50px;
-  // }
-  
-  
-  // #note {
-  //   margin: 20px;
+  .note .edit {
+    padding: 5px;
+  }
 
-  
-  //   input {
-  //     font-size: 1.5em;
-  //     border-radius: .25em;
-  //   }
-  // }
-  
-  // #video-detail {
-  //   width: 100%;
-  // }
-  
-  // #video-section {
-  //   display: flex;
-  
-  //   li {
-  //     list-style: none;
-  //     cursor: pointer;
-  //     display: flex;
-  //     width: 25vw;
-  //     padding: 10px;
-  //   }
-  //   li:hover {
-  //     background: darken( $backgroundcolor, 10% );
-  //   }
-  
-  // }
+  .note .delete {
+    padding: 5px;
+  }
+
+  .note .inputs {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
