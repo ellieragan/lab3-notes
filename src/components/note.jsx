@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Draggable from 'react-draggable';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareCheck, faTrashAlt, faPencil } from '@fortawesome/free-solid-svg-icons';
+import ReactMarkdown from 'react-markdown';
 
 function Note(props) {
   console.log(props);
@@ -87,7 +88,7 @@ function Note(props) {
             {notestuff.note.title}
           </div>
           <div className="text">
-            {notestuff.note.text}
+            <ReactMarkdown>{notestuff.note.text || ''}</ReactMarkdown>
           </div>
         </div>
       </Draggable>
