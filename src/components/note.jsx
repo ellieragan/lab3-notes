@@ -1,4 +1,3 @@
-// import { tsPropertySignature } from '@babel/types';
 import React, { useState } from 'react';
 import Draggable from 'react-draggable';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,7 +5,6 @@ import { faSquareCheck, faTrashAlt, faPencil } from '@fortawesome/free-solid-svg
 import ReactMarkdown from 'react-markdown';
 
 function Note(props) {
-  console.log(props);
   const notestuff = props;
   const [isEditing, editingMode] = useState(false);
   const [editedTitle, setEditedTitle] = useState(notestuff.note.title);
@@ -54,7 +52,7 @@ function Note(props) {
         }}
         // onStart={handleStartDrag}
         onDrag={handleDrag}
-        // onStop={handleStopDrag}
+      // onStop={handleStopDrag}
       >
         <div className="note">
           <div className="inputs">
@@ -79,13 +77,13 @@ function Note(props) {
         }}
         // onStart={handleStartDrag}
         onDrag={handleDrag}
-        // onStop={handleStopDrag}
+      // onStop={handleStopDrag}
       >
         <div className="note">
           <FontAwesomeIcon className="edit" icon={faPencil} onClick={handleEditClick} />
           <FontAwesomeIcon className="delete" icon={faTrashAlt} onClick={handleDelete} />
           <div className="title">
-            {notestuff.note.title}
+            <ReactMarkdown>{notestuff.note.title || ''}</ReactMarkdown>
           </div>
           <div className="text">
             <ReactMarkdown>{notestuff.note.text || ''}</ReactMarkdown>
