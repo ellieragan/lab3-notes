@@ -7,7 +7,7 @@ import autoprefixer from 'autoprefixer';
 export default defineConfig({
   build: {
     rollupOptions: {
-      external: ['@fortawesome/fontawesome-svg-core'],
+      external: ['./fortawesome/fontawesome-svg-core'],
     },
   },
   plugins: [
