@@ -1,13 +1,5 @@
-# Title
+# Real-time collaborative notes editor
 
-*description*
+deployed url: https://lab3-notes-ellieragan.onrender.com
 
-[deployed url](http://url-if-deployed-here)
-
-## What Worked Well
-
-## What Didn't
-
-## Extra Credit
-
-## Screenshots
+Note: at the moment my Firebase security rules need updated so Firebase is denying permission to anyone who tries to use the website. I'm going to get that fixed asap
